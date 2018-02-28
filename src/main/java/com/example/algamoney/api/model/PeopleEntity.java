@@ -1,10 +1,10 @@
 package com.example.algamoney.api.model;
 
 import lombok.Data;
-import lombok.Getter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+
 @Data
 @Entity
 @Table(name="people")
@@ -21,10 +21,6 @@ public class PeopleEntity {
     @Column
     private boolean active;
 
-
     @Embedded
     private AddressEmbeddable address;
-
-
-
 }
